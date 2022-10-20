@@ -1,0 +1,15 @@
+name: 抢购多点优惠券
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    # 定时任务，在每天的5点执行任务
+    - cron: '55 23 * * *'
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone script
+        run: echo "clone script"
+      - name: execute script
+        run: echo "execute script"
